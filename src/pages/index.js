@@ -11,14 +11,40 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
       <header style={{
         backgroundColor: '#2d3b48',
         color: 'white',
         padding: '20px 0',
         fontSize: '24px',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '10px'
       }}>
-        Welcome to My Custom Next.js App
+        <div>Welcome to My Custom Next.js App</div>
+        <div>
+          <a href="/login" style={{
+            marginRight: '10px',
+            background: '#fff',
+            color: '#2d3b48',
+            padding: '8px 16px',
+            borderRadius: '4px',
+            textDecoration: 'none',
+            fontWeight: 'bold',
+            boxShadow: '0 2px 4px rgba(0,0,0,0.08)'
+          }}>Login</a>
+          <a href="/signup" style={{
+            background: '#fff',
+            color: '#2d3b48',
+            padding: '8px 16px',
+            borderRadius: '4px',
+            textDecoration: 'none',
+            fontWeight: 'bold',
+            boxShadow: '0 2px 4px rgba(0,0,0,0.08)'
+          }}>Signup</a>
+        </div>
       </header>
 
       <main style={{ padding: '20px', minHeight: '80vh' }}>
