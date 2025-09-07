@@ -1,4 +1,6 @@
+
 import Head from 'next/head'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -25,25 +27,29 @@ export default function Home() {
       }}>
         <div>Welcome to My Custom Next.js App</div>
         <div>
-          <a href="/login" style={{
-            marginRight: '10px',
-            background: '#fff',
-            color: '#2d3b48',
-            padding: '8px 16px',
-            borderRadius: '4px',
-            textDecoration: 'none',
-            fontWeight: 'bold',
-            boxShadow: '0 2px 4px rgba(0,0,0,0.08)'
-          }}>Login</a>
-          <a href="/signup" style={{
-            background: '#fff',
-            color: '#2d3b48',
-            padding: '8px 16px',
-            borderRadius: '4px',
-            textDecoration: 'none',
-            fontWeight: 'bold',
-            boxShadow: '0 2px 4px rgba(0,0,0,0.08)'
-          }}>Signup</a>
+          <Link href="/login" passHref legacyBehavior>
+            <a style={{
+              marginRight: '10px',
+              background: '#fff',
+              color: '#2d3b48',
+              padding: '8px 16px',
+              borderRadius: '4px',
+              textDecoration: 'none',
+              fontWeight: 'bold',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.08)'
+            }}>Login</a>
+          </Link>
+          <Link href="/signup" passHref legacyBehavior>
+            <a style={{
+              background: '#fff',
+              color: '#2d3b48',
+              padding: '8px 16px',
+              borderRadius: '4px',
+              textDecoration: 'none',
+              fontWeight: 'bold',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.08)'
+            }}>Signup</a>
+          </Link>
         </div>
       </header>
 
