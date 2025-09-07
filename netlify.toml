@@ -1,10 +1,10 @@
 [build]
   command = "npm run build"
   publish = ".next"
-  base = "new-lunar/my-next-app"
+  base = "new-lunar"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
 [functions]
-  directory = "new-lunar/my-next-app/netlify/functions"
+  directory = "new-lunar/netlify/functions"
