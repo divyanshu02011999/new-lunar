@@ -2,12 +2,13 @@
   "name": "my-next-app",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start",
-    "lint": "eslint"
-  },
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "export": "next export",
+      "start": "next start"
+    },
+
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.13.0",
     "commit": "^0.0.4",
