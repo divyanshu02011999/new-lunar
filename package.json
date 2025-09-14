@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "test-mongo": "node test-mongo.mjs"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "5.13.2",
