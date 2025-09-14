@@ -2,5 +2,13 @@
   command = "npm run build"
   publish = ".next"
 
+[dev]
+  command = "npm run dev"
+  port = 3000
+
 [functions]
   directory = "my-next-app/netlify/functions"
+
+[context.production.environment]
+  MONGODB_URI = "mongodb+srv://smartdivyanshu123_db_user:MHA0cSdMEwRcuFq0@cluster0.hwdh190.mongodb.net/"
+  MONGODB_DB = "lunar"
